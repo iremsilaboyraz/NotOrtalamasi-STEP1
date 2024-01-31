@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class NotOrt {
+    public static void main (String[] args) {
+        // Değişkenleri oluştur
+
+        double fizik,kimya,mat,türkce,tarih,müzik;
+
+
+        //Scanner tanımla
+        Scanner not=new Scanner(System.in);
+        System.out.printf("Fizik notunu giriniz:");
+        fizik= not.nextDouble();
+
+        System.out.printf("Matematik notunu giriniz:");
+        mat=not.nextDouble();
+
+        System.out.printf("Kimya notunu giriniz:");
+        kimya=not.nextDouble();
+
+        System.out.printf("Tarih notunu giriniz:");
+        tarih= not.nextDouble();
+
+        System.out.printf("Müzik notunu giriniz:");
+        müzik= not.nextDouble();
+
+        System.out.printf("Türkçe notunu giriniz:");
+        türkce= not.nextDouble();
+
+        double toplam=(mat+fizik+kimya+tarih+müzik+türkce);
+        double sonuc=toplam/6;
+
+        String str=sonuc>=60? "geçti":"kaldı";
+        System.out.println(str);
+
+    }
+}
